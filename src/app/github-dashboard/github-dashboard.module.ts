@@ -7,8 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 
-import { ReactiveFormsModule } from '@angular/forms';
 import { RepoListComponent } from './repo-list/repo-list.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [RepositoriesComponent, RepoListComponent],
@@ -18,7 +18,7 @@ import { RepoListComponent } from './repo-list/repo-list.component';
     MatIconModule,
     MatButtonModule,
     MatTabsModule,
-    ReactiveFormsModule,
+    MatTableModule,
   ],
   exports: [RepositoriesComponent],
 })

@@ -8,7 +8,7 @@ import { GithubService } from 'src/app/services/github.service';
   styleUrls: ['./repo-list.component.scss'],
 })
 export class RepoListComponent implements OnInit {
-  username = 'lakanodia';
+  username = 'likanodia';
   repositories: IRepositories[] = [];
 
   constructor(private githubService: GithubService) {}
@@ -20,4 +20,6 @@ export class RepoListComponent implements OnInit {
         this.repositories = data;
       });
   }
+
+  displayedColumns: string[] = ['position', 'name', 'created_at', 'updated_at'];
 }

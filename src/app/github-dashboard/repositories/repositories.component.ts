@@ -8,16 +8,11 @@ import { GithubService } from 'src/app/services/github.service';
   styleUrls: ['./repositories.component.scss'],
 })
 export class RepositoriesComponent implements OnInit {
-  username = 'lakanodia';
-  repositories: IRepositories[] = [];
 
-  constructor(private githubService: GithubService) {}
+
+  constructor() {}
 
   ngOnInit(): void {
-    this.githubService
-      .getUserRepositories(this.username)
-      .subscribe((data: IRepositories[]) => {
-        this.repositories = data;
-      });
+
   }
 }

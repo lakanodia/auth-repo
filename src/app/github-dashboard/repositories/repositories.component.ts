@@ -8,7 +8,7 @@ import { GithubService } from 'src/app/services/github.service';
   styleUrls: ['./repositories.component.scss'],
 })
 export class RepositoriesComponent implements OnInit {
-  username = 'lakanodia'; // Replace with the desired username
+  username = 'lakanodia';
   repositories: IRepositories[] = [];
 
   constructor(private githubService: GithubService) {}
